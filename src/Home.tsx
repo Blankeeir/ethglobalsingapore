@@ -13,10 +13,10 @@ function Home() {
       console.log("Getting assets");
       try {
         const data = await loadAssets();
-
-        setAssets(data);
+        setAssets(data || []); // Ensure assets is always an array
       } catch (e) {
         console.error("Error getting assets:", e);
+        setAssets([]); // Set assets to empty array on error
       }
     };
     getAssets();
@@ -46,7 +46,7 @@ function Home() {
         <h1 className="text-2xl my-6">Buyer</h1>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-          {assets.map((asset) => (
+          {assets?.map((asset) => (
             <div
               key={asset.name}
               className="border-2 bg-white rounded-lg shadow-sm p-4"

@@ -1,0 +1,35 @@
+[
+  {
+    "pubkey": "adcf5e59599c708c324ab53c88a9b564e45572404987e3d58622c4173d611f6dea7afd23ca11528c1dfebab36c0b2941",
+    "withdrawal_credentials": "01000000000000000000000059f3150087bea6ba70b09b92606df47c7f2dcdf8",
+    "amount": 32000000000,
+    "signature": "a7611ae0ac52d936156c6b092a354db8800811c2c35a6fac2f007ab12ee80de9803e79c5e97cc24b5e035dd1e476e32405fca68332a8edd396ad9708584a07986f76cf6a21b4d4b377cb695c5fed33c483a8ecad9b12a64f57a500dc3e0df055",
+    "deposit_message_root": "6b7a1e5508f8a8644281150866c0934bbcae93c9bb42e1844fd4f23c815b9646",
+    "deposit_data_root": "19a34fc7df1696c9236061b9eb4b98cd4a0aead55df989aa460a521adfc5916e",
+    "fork_version": "00000064",
+    "network_name": "gnosis",
+    "deposit_cli_version": "2.3.0"
+  },
+  {
+    "pubkey": "87a8a45261f5d37906cd86c6e2932b3ef3493263182a168a6c3e0ff9d40c96bfda9bd94f0623e230263ef32e8dd027cc",
+    "withdrawal_credentials": "01000000000000000000000059f3150087bea6ba70b09b92606df47c7f2dcdf8",
+    "amount": 32000000000,
+    "signature": "8fc470bbd888da75fff8242347f05e7000e40a213a8822737770cf9bec8e72517f3e3bb1c4aab8996429d4655121a14806f8fab87b7a39d7c728b6deeb9757b14cb2e4de818c0d3681ec52010670830954223acb0bfdf466d6473d8c5cd066a7",
+    "deposit_message_root": "0594eaa6db98e4403a57c048cb466d63419d5c87f9f055b3f6d0f72e5cf9d73e",
+    "deposit_data_root": "e3275a9fd0b75d9bbe54d1eda91e1c0794d64f65ffcb468a6725c879d9033cf6",
+    "fork_version": "00000064",
+    "network_name": "gnosis",
+    "deposit_cli_version": "2.3.0"
+  },
+  {
+    "pubkey": "a9f19ef21d421f8470a97bcd49a3c4d8a5e5492a8a7559111dcdd224cdc652293fef7cc29ff56bb3a75a4e911805a4aa",
+    "withdrawal_credentials": "01000000000000000000000059f3150087bea6ba70b09b92606df47c7f2dcdf8",
+    "amount": 32000000000,
+    "signature": "a7a4d582b6c18c2c42aad4ef958315797082c63e7b625da3abf5b2f3312388e65c8d46ac252886bc67ed45fec64a57a711c63d7499f64a05e6796d386a51a53d9e5787945dd16b8d24fb5a06158623a0fb050b3b8abcbe1cd986df22b886d2ff",
+    "deposit_message_root": "0fe0f57e011639cf4b41c3d85cf3f2a3b53a6ab5d35e1322fb6640f86b077d0b",
+    "deposit_data_root": "863aa7b5677f390eca6cfd1f790198d94d622224e1b1625e8ce71baaeadf4a44",
+    "fork_version": "00000064",
+    "network_name": "gnosis",
+    "deposit_cli_version": "2.3.0"
+  }
+]

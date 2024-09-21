@@ -10,8 +10,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@dynamic-labs/ethereum": "^2.3.0",
-    "@dynamic-labs/sdk-react-core": "^2.3.0",
+    "@dynamic-labs/ethereum": "^2.6.3",
+    "@dynamic-labs/sdk-react-core": "^2.6.3",
     "@dynamic-labs/wagmi-connector": "^2.3.0",
     "@phosphor-icons/react": "^2.1.7",
     "@radix-ui/react-dialog": "^1.1.1",
@@ -28,7 +28,7 @@
     "short-uuid": "^5.2.0",
     "tailwind-merge": "^2.4.0",
     "tailwindcss-animate": "^1.0.7",
-    "viem": "latest",
+    "viem": "^2.21.10",
     "wagmi": "latest"
   },
   "devDependencies": {
