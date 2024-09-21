@@ -13,9 +13,10 @@ import { config } from "./wagmi.ts";
 import "./index.css";
 import { DynamicWagmiConnector } from "@dynamic-labs/wagmi-connector";
 import { EthereumWalletConnectors } from "@dynamic-labs/ethereum";
-import Home from "./Home.tsx";
-import { Seller } from "./seller/Seller.tsx";
-import { Surveyor } from "./surveyor/Surveyor.tsx";
+import Home from "./components/Home.tsx";
+import Dashboard from "./components/Dashboard.tsx";
+import Marketplace from "./components/Marketplace.tsx";
+import SellAsset from "./components/SellAsset.tsx";
 
 globalThis.Buffer = Buffer;
 
@@ -53,13 +54,17 @@ export const router = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: "/seller",
-        element: <Seller />,
+        path: "/dashboard",
+        element: <Dashboard />,
       },
       {
-        path: "/surveyor",
-        element: <Surveyor />,
+        path: "/marketplace",
+        element: <Marketplace />,
       },
+      {
+        path: "/sell",
+        element: <SellAsset />,
+      }
     ],
   },
 ]);

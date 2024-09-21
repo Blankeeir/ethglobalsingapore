@@ -3,7 +3,7 @@ import { sepolia, gnosis } from "wagmi/chains";
 import { coinbaseWallet, injected, walletConnect } from "wagmi/connectors";
 
 export const config = createConfig({
-  chains: [sepolia,gnosis],
+  chains: [sepolia, gnosis],
   
   connectors: [
     
