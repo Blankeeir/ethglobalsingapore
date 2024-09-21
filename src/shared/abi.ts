@@ -80,4 +80,18 @@ export const ABI_ASSETS = [
     stateMutability: "nonpayable",
     type: "function",
   },
+  {
+    constant: false,
+    inputs: [
+      {
+        name: "assetId",
+        type: "address",
+      },
+    ],
+    name: "attestAsset",
+    outputs: [],
+    payable: false,
+    stateMutability: "nonpayable",
+    type: "function",
+  },
 ] as const;
