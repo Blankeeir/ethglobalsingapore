@@ -10,6 +10,10 @@ Interested buyers can send an offer and request attestation. It works like a bin
 
 Surveyor inspects the boat, and if the condition of the boat matches the description, the order goes through.
 
+### Deployed smart contract
+
+[0x82871BC35482F3453AF61Ff23C0D97fAc6d0d0FD](https://sepolia.etherscan.io/address/0x82871BC35482F3453AF61Ff23C0D97fAc6d0d0FD)
+
 ### Team
 
 #### Siyi
