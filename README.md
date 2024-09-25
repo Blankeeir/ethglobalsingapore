@@ -36,7 +36,7 @@ This technical proposal outlines the development plan for **Attornato**, a decen
 
 ## Project Overview
 
-[doc](https://docs.google.com/document/d/1I0JeLwS2oXMufCdDiTdVIZCG3YA5awvrQSRP23tljxw/edit?usp=sharing)
+[doc, click me clicke me](https://docs.google.com/document/d/1I0JeLwS2oXMufCdDiTdVIZCG3YA5awvrQSRP23tljxw/edit?usp=sharing)
 
 Attornato will:
 
