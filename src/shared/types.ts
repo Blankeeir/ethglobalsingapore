@@ -35,6 +35,7 @@ export interface Sale {
 }
 
 export interface Verification {
+  tokenID: string;
   trader1: string;
   trader2: string;
   tokenTransferred: string;

@@ -23,6 +23,21 @@ export const ABI_TOKENIZATION = [
   },
 ] as const;
 
+export const ABI_RWA_PROCESS = [
+  {
+    constant: false,
+    inputs: [
+      { name: 'assetId', type: 'address' },
+      { name: 'success', type: 'bool' },
+    ],
+    name: 'verifyAsset',
+    outputs: [],
+    payable: false,
+    stateMutability: 'nonpayable',
+    type: 'function',
+  },
+] as const;
+
 export const ABI_ASSETS = [
   {
     constant: true,

@@ -3,6 +3,8 @@ import React, { useState } from 'react';
 import { createAssetForSale } from '@/shared/helpers';
 import { Asset } from '@/shared/types';
 import { useNavigate } from 'react-router-dom';
+import { useAccount } from 'wagmi';
+import { Address } from 'viem';
 
 const SellAsset: React.FC = () => {
   const [error, setError] = useState<string | null>(null);
@@ -15,8 +17,15 @@ const SellAsset: React.FC = () => {
   });
   const [success, setSuccess] = useState<string | null>(null);
   const navigate = useNavigate();
+  const { address, isConnected } = useAccount();
 
   const listForSale = async () => {
+    if (!isConnected || !address) {
+      setError('Please connect your wallet first.');
+      setSuccess(null);
+      return;
+    }
+
     console.log('Listing asset for sale:', asset);
     if (!asset.name || !asset.length || !asset.year || !asset.price || !asset.image) {
       setError('Please fill out all fields');
@@ -25,11 +34,14 @@ const SellAsset: React.FC = () => {
     }
 
     try {
-      const hash = await createAssetForSale(asset);
+      // Optionally, construct a tokenURI pointing to metadata
+      const tokenURI = `https://your-metadata-server.com/metadata/${asset.name.replace(/\s+/g, '-').toLowerCase()}.json`;
+
+      const hash = await createAssetForSale(asset, address as Address, tokenURI);
       console.log('Asset listed for sale with hash:', hash);
       setSuccess('Asset successfully listed for sale!');
       setError(null);
-      // Optionally, navigate to Marketplace after a delay
+      // Navigate to Marketplace after a delay
       setTimeout(() => navigate('/marketplace'), 2000);
     } catch (e) {
       console.error('Error listing asset for sale:', e);

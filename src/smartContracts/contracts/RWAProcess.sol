@@ -4,7 +4,7 @@ pragma solidity ^0.8.0;
 
 import "@chainlink/contracts/src/v0.8/automation/AutomationCompatible.sol";
 import "@chainlink/contracts/src/v0.8/ChainlinkClient.sol";
-import "./AssetToken.sol";
+import "./BindingContract.sol";
 import "./Marketplace.sol";
 
 contract RWAProcess is ChainlinkClient, AutomationCompatibleInterface {
